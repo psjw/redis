@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/string활용(동시성이유, 캐싱처리).sql" dialect="Redis" />
+    <file url="file://$PROJECT_DIR$/list 자료구조.sql" dialect="Redis" />
+    <file url="file://$PROJECT_DIR$/string 자료구조(동시성이유, 캐싱처리).sql" dialect="Redis" />
   </component>
 </project>
