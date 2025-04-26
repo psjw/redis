@@ -49,6 +49,7 @@ keys *
 -- redis 활용 : 좋아요 기능 구현 -> rdb 동시성 이슈
 -- 사용자 마다 select 후 update -> 동시에 0을 조회하는 경우 업데이트시 1로 됨(멀티스레드 지원되어 동시실행)
 -- redis는 단일(Single) 스레드이기 때문에 동시성 이슈 없음
+-- 단점 : 어떤 사용자가 좋아요를 눌렀는지 알 수 없음(무한대로 누를 수 있음)
 set likes:posting:1 0
 --특정 key값의 value를 1만큼 증가
 incr likes:posting:1
