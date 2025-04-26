@@ -63,4 +63,7 @@ decr stocks:product:1
 get stocks:product:1
 
 -- redis 활용 : 캐싱(임시저장) 기능 구현
-
+-- rdb 조회후 redis에 저장 그리고 동일 조회에 있어서는 redis에서 조회
+-- json 데이터 형식으로 저장"
+set posting:1 "{\"title\":\"hello java\",\"content\":\"hello java is\",\"author_email\":\"aa.com\"}" ex 10
+get posting:1
