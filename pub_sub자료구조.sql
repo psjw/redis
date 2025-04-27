@@ -1,4 +1,4 @@
--- redis pub/sub 실습
+-- redis pub/sub 실습 : 데이터가 실시간으로 subscribe, 데이터가 저장되지 않음
 -- pub/sub 기능은 멀티 서버 환경ㅇ에서 채팅, 알림 등의 서비스를 구현할때 많이 사용
 -- 터미널 2,3 실행 (sub)
 subscribe test_channel
